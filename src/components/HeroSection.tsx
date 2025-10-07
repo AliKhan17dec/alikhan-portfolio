@@ -68,7 +68,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="w-full py-10 flex items-center justify-center px-4 md:px-8">
+    <section className="w-full py-10 flex items-center justify-center px-4 md:px-8 bg-black">
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-28 xl:gap-36 2xl:gap-44">
         {/* Image */}
         <div
@@ -128,25 +128,25 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div
-            className={`flex flex-wrap gap-4 mt-8 transition-all duration-1000 ${
-              animations.buttonsVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
-            }`}
-          >
-            <a
-              href="#contact"
-              className="px-8 py-3 flex items-center justify-center bg-[#077b32] text-white font-bold text-base rounded-md no-underline hover:scale-105 hover:bg-transparent hover:border-2 hover:border-[#077b32] hover:text-[#077b32] hover:shadow-[0_0_40px_#077b32] transition-all duration-300"
-            >
-              Hire me
-            </a>
-            <a
-              href="/resume"
-              target="_self"
-              rel="noopener noreferrer"
-              className="px-8 py-3 flex items-center justify-center bg-[#077b32] text-white font-bold text-base rounded-md no-underline hover:scale-105 hover:bg-transparent hover:border-2 hover:border-[#077b32] hover:text-[#077b32] hover:shadow-[0_0_40px_#077b32] transition-all duration-300"
-            >
-              Resume
-            </a>
-          </div>
+  className={`flex flex-wrap gap-4 mt-8 transition-all duration-1000 ${
+    animations.buttonsVisible ? 'scale-100 opacity-100' : 'scale-0 opacity-0'
+  }`}
+>
+  <a
+    href="#contact"
+    className="px-8 py-3 flex flex-1 min-w-[140px] items-center justify-center bg-[#077b32] text-white font-bold text-base rounded-md no-underline hover:scale-105 hover:bg-transparent hover:border-2 hover:border-[#077b32] hover:text-[#077b32] hover:shadow-[0_0_40px_#077b32] transition-all duration-300"
+  >
+    Hire me
+  </a>
+  <a
+    href="/resume"
+    target="_self"
+    rel="noopener noreferrer"
+    className="px-1 py-3 flex flex-1 min-w-[140px] items-center justify-center bg-[#077b32] text-white font-bold text-base rounded-md no-underline hover:scale-105 hover:bg-transparent hover:border-2 hover:border-[#077b32] hover:text-[#077b32] hover:shadow-[0_0_40px_#077b32] transition-all duration-300"
+  >
+    Download CV
+  </a>
+</div>
         </div>
       </div>
 

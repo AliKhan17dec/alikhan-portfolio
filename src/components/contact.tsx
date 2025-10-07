@@ -6,7 +6,7 @@ export default function ContactSection() {
   
 
   return (
-    <section className=" text-white py-12 px-6" id='contact'>
+    <section className=" text-white py-12 px-6 bg-black" id='contact'>
       <div className="max-w-7xl mx-auto">
         {/* Contact Header */}
         <header className="max-w-6xl mx-auto mb-10 md:mb-14">

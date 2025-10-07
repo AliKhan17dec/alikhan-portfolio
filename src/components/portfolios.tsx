@@ -85,7 +85,7 @@ export function PortfolioCardsSection() {
     <section
   id="project"
   aria-labelledby="portfolio-heading"
-  className="w-full py-12 md:py-16"
+  className="w-full py-12 md:py-16 bg-black"
   style={
     {
       "--brand": "#077b32",

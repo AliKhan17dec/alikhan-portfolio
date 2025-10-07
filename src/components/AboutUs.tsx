@@ -73,7 +73,7 @@ export default function AboutSection() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative w-full py-12 md:py-20 px-4 md:px-8 bg-background text-foreground"
+      className="relative w-full py-12 md:py-20 px-4 md:px-8 bg-background text-foreground bg-black"
       style={{ '--brand': '#077b32' } as React.CSSProperties}
     >
       {/* Title */}

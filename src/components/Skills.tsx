@@ -43,7 +43,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="w-full py-20 px-4 md:px-8 relative overflow-hidden max-w-7xl mx-auto"
+      className="w-full py-20 px-4 md:px-8 relative overflow-hidden max-w-7xl mx-auto bg-black"
       style={{ backgroundColor: 'black' }}
     >
       <div className="w-full  mx-auto">

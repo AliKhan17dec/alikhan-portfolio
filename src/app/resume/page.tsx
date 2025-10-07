@@ -4,17 +4,17 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>My Resume</title>
+        <title className="">My Resume</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <div className="min-h-screen bg-black py-5 px-5 sm:px-0">
         <div className="max-w-4xl mx-auto bg-white p-5 rounded-lg shadow-lg">
-          <h1 className="text-3xl font-bold mb-5 text-center">My Resume</h1>
+          <h1 className="text-3xl font-bold mb-5 text-center text-black">My Resume</h1>
 
           {/* Embed the PDF file */}
           <iframe 
-            src="/resume/Ali's Resume-2.pdf" 
+            src="/resume//Ali's Resume-2.pdf" 
             className="w-full h-[600px] border-0"
             title="My Resume PDF"
           />
