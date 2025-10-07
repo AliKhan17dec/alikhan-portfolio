@@ -163,15 +163,15 @@ export function PortfolioCardsSection() {
 
                 <div className="p-5 md:p-6">
                   <h3 className="text-lg md:text-xl font-semibold text-pretty">
-                    <span className="align-middle">{proj.title}</span>
+                    <span className="align-middle text-white">{proj.title}</span>
                   </h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{proj.description}</p>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed text-white">{proj.description}</p>
 
                   <div className="mt-4 flex flex-wrap items-center gap-2">
                     {proj.tags.map((t) => (
                       <span
                         key={t}
-                        className="inline-flex items-center rounded-full border border-[color:var(--brand)]/40 px-2.5 py-0.5 text-xs font-medium text-foreground/90"
+                        className="inline-flex items-center rounded-full border border-[color:var(--brand)]/40 text-white px-2.5 py-0.5 text-xs font-medium"
                       >
                         {t}
                       </span>
