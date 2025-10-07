@@ -139,7 +139,7 @@ const HeroSection = () => {
     Hire me
   </a>
   <a
-    href="/resume"
+    href="/cv"
     target="_self"
     rel="noopener noreferrer"
     className="px-1 py-3 flex flex-1 min-w-[140px] items-center justify-center bg-[#077b32] text-white font-bold text-base rounded-md no-underline hover:scale-105 hover:bg-transparent hover:border-2 hover:border-[#077b32] hover:text-[#077b32] hover:shadow-[0_0_40px_#077b32] transition-all duration-300"
