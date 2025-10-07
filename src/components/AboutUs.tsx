@@ -97,7 +97,7 @@ export default function AboutSection() {
           Turning ideas into reliable, scalable experiences through code and collaboration.
         </h2> */}
         <p
-          className="mt-4 max-w-7xl text-pretty leading-relaxed text-sm md:text-base opacity-0 translate-y-2 is-inview:!opacity-90 is-inview:!translate-y-0 transition-all duration-700 delay-150"
+          className="mt-4 max-w-7xl text-pretty leading-relaxed text-sm md:text-base opacity-0 translate-y-2 is-inview:!opacity-90 is-inview:!translate-y-0 transition-all duration-700 delay-150 text-white"
           data-reveal="true"
         >
           I’m a Full Stack Web Application Developer skilled in Next.js, Node.js, with experience in NestJS, Tailwind CSS, AWS, and Linux. I’m passionate about creating clean, scalable, and high-performance web applications that deliver great user experiences.
