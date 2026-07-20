@@ -311,29 +311,47 @@ export const BootstrapUI = () => (
 
 // --- Typewriter Hook ---
 function useTypewriter(text: string, speed: number = 15, startDelay: number = 200) {
-  const [displayedText, setDisplayedText] = useState("");
-  const [isTyping, setIsTyping] = useState(false);
+  const [typingState, setTypingState] = useState({
+    source: text,
+    displayedText: "",
+    isTyping: true,
+  });
 
   useEffect(() => {
-    setDisplayedText("");
-    setIsTyping(true);
+    let timer: ReturnType<typeof setInterval> | undefined;
+    let index = 0;
+
     const timeout = setTimeout(() => {
-      let i = 0;
-      const timer = setInterval(() => {
-        if (i < text.length) {
-          setDisplayedText((prev) => prev + text.charAt(i));
-          i++;
+      timer = setInterval(() => {
+        if (index < text.length) {
+          index++;
+          setTypingState({
+            source: text,
+            displayedText: text.slice(0, index),
+            isTyping: true,
+          });
         } else {
           clearInterval(timer);
-          setIsTyping(false);
+          setTypingState({
+            source: text,
+            displayedText: text,
+            isTyping: false,
+          });
         }
       }, speed);
-      return () => clearInterval(timer);
     }, startDelay);
-    return () => clearTimeout(timeout);
+
+    return () => {
+      clearTimeout(timeout);
+      if (timer) clearInterval(timer);
+    };
   }, [text, speed, startDelay]);
 
-  return { displayedText, isTyping };
+  if (typingState.source !== text) {
+    return { displayedText: "", isTyping: true };
+  }
+
+  return typingState;
 }
 
 // --- Lightweight Syntax Highlighter ---
