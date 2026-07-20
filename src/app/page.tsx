@@ -3,6 +3,7 @@ import AboutSection from "../components/AboutUs";
 import SkillsSection from "../components/Skills";
 import HardSkillsSection from "../components/portfolios";
 import ContactSection from "../components/contact";
+import SkillCodeEditor from "@/components/Skills";
 
 
 export default function Home() {
@@ -10,9 +11,10 @@ export default function Home() {
     <>
       <HeroSection />
       <AboutSection />
-      <SkillsSection />
+      <SkillCodeEditor />
       <HardSkillsSection />
       <ContactSection />
+      
     </>
   );
 }

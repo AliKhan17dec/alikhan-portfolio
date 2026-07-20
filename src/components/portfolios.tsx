@@ -34,9 +34,9 @@ const projects: Project[] = [
     title: "Car Deal Marketplace",
     description: "A modern car deal marketplace platform.",
     tags: ["Next.js", "Nestjs", "TailwindCss", "Postgresql"],
-    href: "https://car-deal-marketplace.vercel.app/AllCars",
+    href: "https://cardealmarketplace.com",
     imageAlt: "Docs Engine preview",
-    imageSrc: "/portfolios/Screenshot 2025-10-07 at 2.08.04 PM.webp",
+    imageSrc: "/portfolios/cdm.webp",
   },
   {
     title: "BemBexLab",
@@ -47,10 +47,10 @@ const projects: Project[] = [
     imageSrc: "/portfolios/Screenshot 2025-10-07 at 2.13.49 PM.webp",
   },
   {
-    title: "Engines Market UK",
-    description: "A modern platform for buying and selling engines.",
+    title: "Engines Market",
+    description: "A modern platform for Vehicles engines.",
     tags: ["Next.js", "Node.js", "TailwindCss", "CMS"],
-    href: "https://enginesmarket.co.uk/",
+    href: "https://engines-market-fork.vercel.app",
     imageAlt: "AI Mail Writer preview",
     imageSrc: "/portfolios/Screenshot 2025-10-07 at 2.17.17 PM.webp",
   },
@@ -58,25 +58,41 @@ const projects: Project[] = [
     title: "Magic Cake",
     description: "A sweet and elegant cake shop website.",
     tags: ["Next.js", "Node.js", "TailwindCss"],
-    href: "https://magicakes.vercel.app/",
+    href: "https://bakewellmagicakes.com",
     imageAlt: "Collab Whiteboard preview",
-    imageSrc: "/portfolios/Screenshot 2025-10-07 at 2.20.51 PM.webp",
+    imageSrc: "/portfolios/Screenshot (3).webp",
   },
   {
-    title: "GIAIC",
-    description: "A modern replica of the GIAIC IT program website.",
-    tags: ["Next.js", "TailwindCss"],
-    href: "https://giaic-nu.vercel.app/",
-    imageAlt: "Collab Whiteboard preview",
-    imageSrc: "/portfolios/Screenshot 2025-01-24 at 8.56.06 PM.webp",
+    title: "Engines Market UK",
+    description: "A modern platform for Vehicles engines.",
+    tags: ["Next.js", "Node.js", "TailwindCss", "CMS"],
+    href: "https://enginesmarket.co.uk",
+    imageAlt: "AI Mail Writer preview",
+    imageSrc: "/portfolios/Screenshot (2).webp",
   },
   {
-    title: "Food Tuck",
-    description: "A clean and appetizing restaurant website.",
-    tags: ["Next.js", "TailwindCss", "SanityCMS", "Nodejs"],
-    href: "https://giaic-hackathon-resturant-web-next-js.vercel.app/",
-    imageAlt: "Collab Whiteboard preview",
-    imageSrc: "/portfolios/Screenshot 2025-10-07 at 2.29.32 PM.webp",
+    title: "Engines Code UK",
+    description: "A modern platform for Vehicles engines.",
+    tags: ["Next.js", "Node.js", "TailwindCss"],
+    href: "https://www.enginecode.uk",
+    imageAlt: "AI Mail Writer preview",
+    imageSrc: "/portfolios/Screenshot (1).webp",
+  },
+  {
+    title: "Aussie Digital",
+    description: "A sleek and responsive digital agency website.",
+    tags: ["Next.js", "Nodejs", "TailwindCss"],
+    href: "https://aussie-digital-studios.vercel.app",
+    imageAlt: "Studio CMS preview",
+    imageSrc: "/portfolios/Screenshot (4).webp",
+  },
+  {
+    title: "Lead Distribution CRM",
+    description: "An Lead Distribution CRM for Engines and car parts leads",
+    tags: ["Next.js", "Nodejs", "TailwindCss", "Postgresql"],
+    href: "https://crm.enginesmarket.co.uk",
+    imageAlt: "Studio CMS preview",
+    imageSrc: "/portfolios/Screenshot (5).webp",
   },
 ]
 
@@ -93,7 +109,7 @@ export function PortfolioCardsSection() {
     } as React.CSSProperties
   }
 >
-      <div className="mx-auto w-full max-w-7xl px-4 md:px-8">
+      <div className="mx-auto w-full max-w-[1400px] px-4 md:px-8">
         <header className="max-w-6xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-3">
             <span

@@ -15,7 +15,14 @@ const experience: TimelineItem[] = [
     title: "Full Stack Developer",
     seniority: "Junior",
     org: "BemBexLab",
-    period: "06/2025 – 09/2025",
+    period: "11/2025 – ongoing",
+    description: "Contributed across the stack with a focus on clean UI, performance, and collaboration.",
+  },
+  {
+    title: "Full Stack Developer",
+    seniority: "Intern",
+    org: "BemBexLab",
+    period: "06/2025 – 11/2025",
     description: "Contributed across the stack with a focus on clean UI, performance, and collaboration.",
   },
   {
@@ -23,6 +30,13 @@ const experience: TimelineItem[] = [
     seniority: "Intern",
     org: "BemBexLab",
     period: "04/2025 – 06/2025",
+    description: "Contributed across the stack with a focus on clean UI, performance, and collaboration.",
+  },
+  {
+    title: "Full Stack Developer",
+    seniority: "",
+    org: "Freelance",
+    period: "01/2024 – ongoing",
     description: "Contributed across the stack with a focus on clean UI, performance, and collaboration.",
   },
 ]
@@ -77,7 +91,7 @@ export default function AboutSection() {
       style={{ '--brand': '#077b32' } as React.CSSProperties}
     >
       {/* Title */}
-      <header className="max-w-6xl mx-auto mb-10 md:mb-14">
+      <header className="max-w-[1400px] mx-auto mb-10 md:mb-14">
         <div
           className="inline-flex items-center gap-3 opacity-0 translate-y-3 is-inview:!opacity-100 is-inview:!translate-y-0 transition-all duration-700"
           data-reveal="true"
@@ -102,14 +116,14 @@ export default function AboutSection() {
         >
           I’m a Full Stack Web Application Developer skilled in Next.js, Node.js, with experience in NestJS, Tailwind CSS, AWS, and Linux. I’m passionate about creating clean, scalable, and high-performance web applications that deliver great user experiences.
 
-I’m currently pursuing the Cloud Applied Generative AI course at Governor Sindh House and a BSCS degree at Virtual University. I also hold an Intermediate English certification from Domino English Learning Center.
+          I’m currently pursuing the Cloud Applied Generative AI course at Governor Sindh House and a BSCS degree at Virtual University. I also hold an Intermediate English certification from Domino English Learning Center.
 
-With a strong interest in modern web technologies and cloud computing, I aim to build innovative digital solutions that blend performance with design.
+          With a strong interest in modern web technologies and cloud computing, I aim to build innovative digital solutions that blend performance with design.
         </p>
       </header>
 
       {/* Content grid */}
-      <main className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 text-white">
+      <main className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 text-white">
         {/* Experience */}
         <section
           aria-labelledby="experience-title"
@@ -130,12 +144,12 @@ With a strong interest in modern web technologies and cloud computing, I aim to 
     className="pointer-events-none absolute left-[10px] top-0 bottom-0 w-px bg-[color-mix(in_oklab,#077b32_35%,transparent_65%)]"
   />
   {experience.map((item, idx) => (
-    <li key={idx} className="relative pl-8 py-4 group">
+    <li key={idx} className="relative pl-8 py-2 group">
       <span
-        className="absolute left-0 top-5 h-2.5 w-2.5 rounded-full bg-[#077b32] shadow-[0_0_18px_#077b32] ring-2 ring-[color-mix(in_oklab,#077b32_50%,transparent_50%)]"
+        className="absolute left-[5px] top-4 h-2.5 w-2.5 rounded-full bg-[#077b32] shadow-[0_0_18px_#077b32] ring-2 ring-[color-mix(in_oklab,#077b32_50%,transparent_50%)]"
         aria-hidden="true"
       />
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-start justify-between gap-2">
         <div>
           <p className="font-medium">
             {item.title}
@@ -145,14 +159,14 @@ With a strong interest in modern web technologies and cloud computing, I aim to 
           <p className="text-xs opacity-70 mt-0.5">{item.period}</p>
         </div>
       </div>
-      {item.description && <p className="mt-2 text-sm leading-relaxed opacity-90">{item.description}</p>}
+      {/* {item.description && <p className="mt-2 text-sm leading-relaxed opacity-90">{item.description}</p>} */}
       <div className="mt-3 h-[1px] w-full bg-[color-mix(in_oklab,#077b32_25%,#e5e7eb_75%)] opacity-50 transition-opacity group-hover:opacity-80" />
     </li>
   ))}
 </ol>
         </section>
 
-        
+
 
         {/* Certifications */}
         <section
@@ -218,7 +232,7 @@ With a strong interest in modern web technologies and cloud computing, I aim to 
         </section>
       </main>
 
-      
+
 
       <style jsx global>{`
         [data-reveal="true"] {
