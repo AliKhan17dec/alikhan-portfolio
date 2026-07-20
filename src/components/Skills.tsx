@@ -340,7 +340,7 @@ function useTypewriter(text: string, speed: number = 15, startDelay: number = 20
 const highlightCode = (code: string, language: Language, isTyping: boolean) => {
   const lines = code.split('\n');
   return lines.map((line, i) => {
-    let html = line
+    const html = line
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
       .replace(/(\/\/.*$|#.*$)/gm, '<span class="text-gray-500 italic">$1</span>')
       .replace(/(".*?"|'.*?'|`.*?`)/g, '<span class="text-green-400">$1</span>')

@@ -1,6 +1,5 @@
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutUs";
-import SkillsSection from "../components/Skills";
 import HardSkillsSection from "../components/portfolios";
 import ContactSection from "../components/contact";
 import SkillCodeEditor from "@/components/Skills";
